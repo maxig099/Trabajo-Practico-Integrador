@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: gray;
+}
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+img {
+  max-width: 100%;
+
+}
+
+
+
+
+.barNav li  {
+  margin-left: 12;
+
+}
+
+
+.barNav ul {
+list-style-type: none; 
+overflow: hidden;
+font-weight: bold;
+}
+ 
+
+.barNav li a{
+display: block;
+color: black;  
+text-decoration: none;
+float: left;
+padding: 20px;
+position: relative;
+
+}
+
+
+.barNav li a:hover {
+background-color: grey; 
+color: #fff;
+
+}
+
+
+.center {
+max-width: 1100px;
+margin: auto;
+  
+
+}
+.bloqueReceta {
+  text-align: center;
+  width: 300px;
+  height: auto;
+  display: inline-table;
+  margin-left: 50px;
+  margin-top: 25px;
+ 
+}
+
+ #suscribite {
+  text-align: center;
+  border-style:solid;
+  border-width: 1px;
+  width: 500px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px ;
+ }
+
+
+  
+
+
+
+
+ 
+ 
