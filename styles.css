@@ -4,54 +4,23 @@ html {
 
 
 * {
+  font-family: Arial, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  background-color: gray;
+  
+  
 }
 
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+ 
+  background-color: #f0f0f0;
 }
 
 img {
   max-width: 100%;
-
-}
-
-
-
-
-.barNav li  {
-  margin-left: 12;
-
-}
-
-
-.barNav ul {
-list-style-type: none; 
-overflow: hidden;
-font-weight: bold;
-}
- 
-
-.barNav li a{
-display: block;
-color: black;  
-text-decoration: none;
-float: left;
-padding: 20px;
-position: relative;
-
-}
-
-
-.barNav li a:hover {
-background-color: grey; 
-color: #fff;
 
 }
 
@@ -82,8 +51,69 @@ margin: auto;
   padding: 30px ;
  }
 
+ #barNav1 {
+  background-color:rgb(35, 114, 35);
+  display: flex;
+  padding: 10px 0;
+}
+
+#barNav1 a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 15px;
+  margin: 0 12px;
+}
+
+#barNav1 a:hover {
+  background-color: #931c1c;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+.login{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+  margin: 10px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color:brown;
+  color: white;
+  border-radius: 4px;
+}
+
 
   
+
+ 
+
 
 
 
