@@ -33,6 +33,9 @@ margin: auto;
   margin-top: 25px;
  
 }
+.bloqueReceta img {
+  min-height: 220px;
+}
 
  #suscribite {
   text-align: center;
@@ -45,23 +48,26 @@ margin: auto;
  }
 
  .barNav {
-  background-color:rgb(35, 114, 35);
-  padding: 20px;
+  background-color:#ff4000;
+  display: flex;
+  align-items: center;
 }
 
 .barNav a {
-  color: white;
+  margin-left: 100px;
   text-decoration: none;
+  color: white;;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .barNav img {
-  margin: auto;
-  margin-left: 40%;
+  width: 120px;
+  
 }
 
 .barNav a:hover {
-  background-color: #931c1c;
+  background-color: red;
   padding: 20px;
 }
 
@@ -127,14 +133,58 @@ h1 {
 .contReceta {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: justify;
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  
+  margin-left: 20%;
+  margin-right: 20%;
+
 }
 
-  
+.contReceta ul {
+  list-style:circle;
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.carruselImg {
+    position: absolute;
+    top: 0;
+    left: 00px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+}
+
+.carruselImg img {
+  width: 100%;
+}
+
+.carruselImg.actual {
+    opacity: 1;
+    z-index: 1;
+}
+
+.sig, .atras {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    z-index: 2;
+}
+
+.atras {
+    left: 10px;
+}
+
+.sig {
+    right: 10px;
+}
+
 
  
 
