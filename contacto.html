@@ -27,13 +27,13 @@
       <div class="login">
           <h2>Contacto</h2>
           <p>Dejanos tus datos para enviarte novedades cada semana</p>
-          <form id="loginForm">
+          <form onsubmit="return validarDatos()">
             <label for="nom">Nombre</label>
-              <input type="text">
+              <input type="text" id="nombre">
               <label for="apell">Apellido</label>
-              <input type="text">
+              <input type="text" id="apellido">
               <label for="email">Email</label>
-              <input type="text">
+              <input type="text" id="email">
               
               <button type="submit">Enviar</button>
           
@@ -44,4 +44,7 @@
     <footer>
         &copy; 2024 Maxig099. Todos los derechos reservados.
   </footer>
+
+  <script src="script.js"></script>
   </body>
+  </html>
