@@ -188,8 +188,9 @@ h1 {
 }
 .labelError, .labelCampVacio {
   display: none;
+  color: red;
 }
-.labelError.visible, .labelCampVacio.visible {
+.labelError.visible, .labelCampoVacio.visible {
   display: flex;
   margin: 0;
   font-size: x-small;
