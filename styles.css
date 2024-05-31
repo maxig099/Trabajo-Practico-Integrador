@@ -6,7 +6,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  background-color: #f0f0f0;
+  background-image: url(./Recursos/Imagenes/background3.png);
+
   
   
 }
@@ -14,11 +15,18 @@ body {
 
 .bloqueReceta img {
   max-width: 100%;
+  border-radius: 10px;
+
 
 }
 
+.linkReceta  {
+  text-decoration: none;
+  color: black;
+}
 
-#recetas {
+
+.recetas {
 max-width: 1100px;
 margin: auto;
   
@@ -85,6 +93,20 @@ main {
   width: 500px;
   height: 500px;
 }
+
+.login.invisible {
+  display: none;
+}
+
+.login.msj.visible {
+display:block;
+align-content: center; 
+}
+
+.login.msj{
+  display: none;
+}
+
 
 
 h2, p{
@@ -200,6 +222,24 @@ h1 {
 
 }
 
+.imgReceta {
+  border-radius: 10px;
+}
+
+.bInicio a{
+  color: white;
+  text-decoration: none;
+  
+  }
+  
+  .bInicio {
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 20px;
+  }
 
  
 

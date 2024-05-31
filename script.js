@@ -37,12 +37,15 @@ const expRegNom = /^[a-zA-Z\s]+$/;
             const apell = apellido.value.trim();
             const email = document.getElementById('email');
             const correo = email.value.trim();
+            const saludo = document.getElementById('saludo');
+            const divContacto = document.getElementById('login')
             let nomVacio = document.getElementById('errorNombreVacio');
             let nomInv = document.getElementById('errorNombreInvalido');
             let apellVacio = document.getElementById('errorApellidoVacio');
             let apellInv = document.getElementById('errorApellidoInvalido');
             let emailVacio = document.getElementById('errorEmailVacio')
             let emailInv = document.getElementById('errorEmailInvalido')
+            let formValido = true;
           
 
             for (v of frm.querySelectorAll("input, label")){
@@ -54,35 +57,43 @@ const expRegNom = /^[a-zA-Z\s]+$/;
             if (nom == "") {
                 nomVacio.classList.add('visible');
                 nombre.classList.add('error');
+                formValido = false;
                
             } else if (!expRegNom.test(nom)) {
                 nomInv.classList.add('visible');
                 nombre.classList.add('error');
+                formValido = false;
                 
             }
 
             if (apell == "") {
                 apellVacio.classList.add('visible');
                 apellido.classList.add('error');
+                formValido = false;
                 
             } else if (!expRegNom.test(apell)) {
                 apellInv.classList.add('visible');
                 apellido.classList.add('error');
-                
+                formValido = false;
             }
 
             if (correo == "") {
                 emailVacio.classList.add('visible');
                 email.classList.add('error');
+                formValido = false;
                 
             } else if (!expRegMail.test(correo)) {
                 emailInv.classList.add('visible');
                 email.classList.add('error');
-                
+                formValido = false;
             }
 
-            
+            if(formValido) {
+                saludo.classList.add('visible')
+                login.classList.add('invisible')
 
+            }
+          
             return false;
         }
 
