@@ -99,7 +99,8 @@ form {
 }
 
 label {
-  margin-top: 1%;
+  margin-top: 5%;
+  display: flex;
 }
 
 input {
@@ -180,6 +181,21 @@ h1 {
 
 .sig {
   right: 10px;
+}
+
+.error {
+  border-color: red;
+}
+.labelError, .labelCampVacio {
+  display: none;
+}
+.labelError.visible, .labelCampVacio.visible {
+  display: flex;
+  margin: 0;
+  font-size: x-small;
+  text-decoration:underline;
+  color: red;
+
 }
 
 
